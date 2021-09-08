@@ -49,6 +49,7 @@ spec:
           project_short_description: "Starter template for creating a python project."
           version: "0.1.0"
           email: "email"
+          github_username: "lucasmelin"
           open_source_license: "MIT license"
 
     - id: fetch-docs
