@@ -2,8 +2,8 @@ apiVersion: backstage.io/v1beta2
 kind: Template
 # some metadata about the template itself
 metadata:
-  name: v1beta2-demo
-  title: Test Action template
+  name: Demo python project using cookiecutter
+  title: Python Project Template
   description: scaffolder v1beta2 template demo
 spec:
   owner: backstage/techdocs-core
@@ -15,6 +15,13 @@ spec:
       required:
         - name
       properties:
+        name:
+          title: Name
+          type: string
+          description: Unique name of the component
+          ui:autofocus: true
+          ui:options:
+            rows: 5
         name:
           title: Name
           type: string
@@ -44,6 +51,12 @@ spec:
         url: https://github.com/lucasmelin/cookiecutter-pyproject
         values:
           project_name: '{{ parameters.name }}'
+          full_name: "Lucas Melin"
+          project_slug: "{{ parameters.name.lower().replace(' ', '_').replace('-', '_') }}"
+          project_short_description: "Starter template for creating a python project."
+          version: "0.1.0"
+          email: "email"
+          open_source_license: "MIT license"
 
     - id: fetch-docs
       name: Fetch Docs
