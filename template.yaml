@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1beta2
 kind: Template
 # some metadata about the template itself
 metadata:
-  name: Template python project
+  name: python-project-template
   title: Python Project Template
   description: scaffolder v1beta2 template demo
 spec:
