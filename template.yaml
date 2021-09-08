@@ -45,7 +45,7 @@ spec:
         values:
           project_name: '{{ parameters.name }}'
           full_name: "Lucas Melin"
-          project_slug: "{{ parameters.name.lower().replace(' ', '_').replace('-', '_') }}"
+          project_slug: "demo123"
           project_short_description: "Starter template for creating a python project."
           version: "0.1.0"
           email: "email"
