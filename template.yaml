@@ -40,7 +40,7 @@ spec:
       name: Fetch Base
       action: fetch:cookiecutter
       input:
-        targetPath: ./pyproject
+        targetPath: .
         url: https://github.com/lucasmelin/cookiecutter-pyproject
         values:
           project_name: '{{ parameters.name }}'
@@ -52,13 +52,6 @@ spec:
           email: "email"
           github_username: "lucasmelin"
           open_source_license: "MIT license"
-
-    - id: fetch-docs
-      name: Fetch Docs
-      action: fetch:plain
-      input:
-        targetPath: ./community
-        url: https://github.com/backstage/community/tree/main/backstage-community-sessions
 
     - id: publish
       name: Publish
