@@ -41,7 +41,7 @@ spec:
       action: fetch:cookiecutter
       input:
         targetPath: .
-        url: https://github.com/lucasmelin/cookiecutter-pyproject
+        url: https://github.com/lucasmelin/cookiecutter-pyproject/{{cookiecutter.project_slug}}
         values:
           project_name: '{{ parameters.name }}'
           full_name: "Lucas Melin"
