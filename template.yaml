@@ -5,6 +5,9 @@ metadata:
   name: python-project-template
   title: Python Project Template
   description: Create a new Python project
+  tags:
+    - recommended
+    - python
 spec:
   owner: developer-productivity
   type: service
