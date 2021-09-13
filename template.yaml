@@ -4,9 +4,9 @@ kind: Template
 metadata:
   name: python-project-template
   title: Python Project Template
-  description: scaffolder v1beta2 template demo
+  description: Create a new Python project
 spec:
-  owner: backstage/techdocs-core
+  owner: developer-productivity
   type: service
 
   # these are the steps which are rendered in the frontend with the form input
