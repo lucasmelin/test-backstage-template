@@ -42,7 +42,6 @@ spec:
       input:
         targetPath: .
         url: https://github.com/lucasmelin/cookiecutter-pyproject
-        cookiecutterCompat: true
         values:
           project_name: '{{ parameters.name }}'
           full_name: "Lucas Melin"
