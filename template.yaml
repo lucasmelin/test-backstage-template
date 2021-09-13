@@ -38,7 +38,7 @@ spec:
   steps:
     - id: fetch-base
       name: Fetch Base
-      action: fetch:template
+      action: fetch:cookiecutter
       input:
         targetPath: .
         url: https://github.com/lucasmelin/cookiecutter-pyproject
