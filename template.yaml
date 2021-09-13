@@ -40,8 +40,8 @@ spec:
       name: Fetch Base
       action: fetch:cookiecutter
       input:
-        targetPath: .
-        url: https://github.com/lucasmelin/cookiecutter-pyproject/{{cookiecutter.project_slug}}
+        targetPath: ./{{cookiecutter.project_slug}}
+        url: https://github.com/lucasmelin/cookiecutter-pyproject/
         values:
           project_name: '{{ parameters.name }}'
           full_name: "Lucas Melin"
