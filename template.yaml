@@ -55,8 +55,8 @@ spec:
           email: "email"
           github_username: "lucasmelin"
           open_source_license: "MIT license"
-          "_copy_without_render":
-            -  ".github/*"
+          _copy_without_render:
+            - ".github/*"
 
     - id: publish
       name: Publish
